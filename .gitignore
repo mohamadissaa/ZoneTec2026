@@ -24,6 +24,9 @@ boost.json
 Homestead.json
 Homestead.yaml
 /ignorables/*
+# Deployment handover artifacts: database dump and media archive. These carry
+# store data and must be transferred out of band, never committed.
+/handover
 /node_modules
 npm-debug.log
 opencode.json
