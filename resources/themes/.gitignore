@@ -1,0 +1,17 @@
+# Custom shop themes live here and MUST be version-controlled — the upstream
+# Bagisto default of ignoring everything ("*") would drop the whole theme from
+# the repo, so a fresh clone/deploy would fall back to the stock theme.
+#
+# Only dependencies and build noise are excluded; theme sources (views, assets,
+# tailwind/vite config) are tracked.
+
+# The root .gitignore drops package-lock.json globally; re-include it here so
+# production builds can use `npm ci` and get the exact dependency tree.
+!package-lock.json
+
+node_modules/
+.vite/
+*.hot
+*.log
+.DS_Store
+Thumbs.db
